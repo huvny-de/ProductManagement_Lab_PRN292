@@ -5,4 +5,4 @@
 - Authentication
 - GUI
 - Using DOCKER
-##*Deadline --/--/--*
+## *Deadline --/--/--*
