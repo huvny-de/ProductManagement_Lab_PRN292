@@ -11,7 +11,7 @@ namespace ProductManagement_Lab_PRN292.DTO
         public string ProductName { get; set; }
         public float Price { get; set; }
         public int Amount { get; set; }
-
+        public string Photo { get; set; }
         public string ProductInCategory { get; set; }
 
     }
