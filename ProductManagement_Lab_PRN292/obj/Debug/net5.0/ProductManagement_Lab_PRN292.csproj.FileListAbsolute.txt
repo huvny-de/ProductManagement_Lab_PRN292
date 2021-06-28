@@ -1,4 +1,3 @@
-C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\ProductManagement_Lab_PRN292.csproj.AssemblyReference.cache
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\ProductManagement_Lab_PRN292.GeneratedMSBuildEditorConfig.editorconfig
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\ProductManagement_Lab_PRN292.AssemblyInfoInputs.cache
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\ProductManagement_Lab_PRN292.AssemblyInfo.cs
