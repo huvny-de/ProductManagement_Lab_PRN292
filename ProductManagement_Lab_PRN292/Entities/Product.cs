@@ -21,7 +21,7 @@ namespace ProductManagement_Lab_PRN292.Entities
 
         [Required]
         [DisplayName("Price")]
-        public float Price { get; set; }
+        public decimal Price { get; set; }
 
         [DisplayName("Amount")]
         public int Amount { get; set; }
