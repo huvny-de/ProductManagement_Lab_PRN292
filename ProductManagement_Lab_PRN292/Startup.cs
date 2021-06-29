@@ -24,6 +24,7 @@ namespace ProductManagement_Lab_PRN292
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages();
             services.AddControllersWithViews();
             services.AddDbContext<DbProductManagement>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
         }
@@ -39,9 +40,11 @@ namespace ProductManagement_Lab_PRN292
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            app.UseHttpsRedirection();//+
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication(); // +
 
             app.UseAuthorization();
 
@@ -50,6 +53,7 @@ namespace ProductManagement_Lab_PRN292
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages(); // de goi webform truc tiep
             });
         }
     }

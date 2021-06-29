@@ -16,6 +16,14 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
+
+                services.AddDbContext<DbIdentity>(options =>
+                    options.UseSqlServer(
+                        context.Configuration.GetConnectionString("ConnectionString")));
+
+                services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
+                    .AddEntityFrameworkStores<DbIdentity>();
             });
         }
     }
