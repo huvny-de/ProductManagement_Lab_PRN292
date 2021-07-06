@@ -20,6 +20,7 @@ namespace ProductManagement_Lab_PRN292.Entities
         [PersonalData]
 
         [Required(ErrorMessage = "Date Of Birth is Required")]
+        [DataType(DataType.Date)]
         [Range(typeof(DateTime), "1/1/1900", "DateTime.Today",
         ErrorMessage = "Date of birth must be between {1} and {2}")]
         public DateTime Dob { get; set; }

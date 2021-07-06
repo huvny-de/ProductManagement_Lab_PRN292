@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using ProductManagement_Lab_PRN292.Entities;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -31,7 +30,7 @@ namespace ProductManagement_Lab_PRN292.DbContexts
                 UserName = "huvny",
                 NormalizedUserName = "huvny",
                 Email = "huvny@gmail.com",
-                Dob = new DateTime(1997, 27, 3),
+                Dob = new DateTime(1997, 3, 27),
                 NormalizedEmail = "huvny@gmail.com",
                 PhoneNumber = "0954683265",
                 EmailConfirmed = true,
@@ -46,7 +45,7 @@ namespace ProductManagement_Lab_PRN292.DbContexts
                 UserName = "Jess",
                 NormalizedUserName = "Jess",
                 Email = "Jess@gmail.com",
-                Dob = new DateTime(1987, 26, 7),
+                Dob = new DateTime(1987, 7, 26).Date,
                 NormalizedEmail = "Jess@gmail.com",
                 PhoneNumber = "6548521564",
                 EmailConfirmed = true,
@@ -56,7 +55,7 @@ namespace ProductManagement_Lab_PRN292.DbContexts
             );
             builder.Entity<IdentityRole>().HasData(
                 new IdentityRole { Id = roleAdminId.ToString(), Name = "Administrator", NormalizedName = "Administrator", },
-                new IdentityRole { Id = editorId.ToString(), Name = "Editor", NormalizedName = "Editor" }
+                new IdentityRole { Id = roleEditorId.ToString(), Name = "Editor", NormalizedName = "Editor" }
                 );
             builder.Entity<IdentityUserRole<string>>().HasData(
                 new IdentityUserRole<string> { RoleId = roleAdminId.ToString(), UserId = adminId.ToString() },
