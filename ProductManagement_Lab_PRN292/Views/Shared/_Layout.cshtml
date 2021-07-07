@@ -34,10 +34,15 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @if (TempData["AlertMessage"] != null)
+            {
+                <div id="AlertBox" class="alert @TempData["AlertType"] hide">
+                    @TempData["AlertMessage"]
+                </div>
+            }
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2021 - ProductManagement_Lab_PRN292 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

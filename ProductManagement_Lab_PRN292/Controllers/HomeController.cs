@@ -12,7 +12,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;

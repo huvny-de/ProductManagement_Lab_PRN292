@@ -39,10 +39,17 @@ namespace ProductManagement_Lab_PRN292.Controllers
             return View(listUser);
         }
 
+
+
         // GET: UserManageController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(string id)
         {
-            return View();
+            var roleDetails = _roleManager.Roles.Where(x => x.Id == id).Select(x => new RoleViewModel
+            {
+                Id = x.Id,
+                RoleName = x.Name
+            }).FirstOrDefault();
+            return View(roleDetails);
         }
 
         // GET: UserManageController/Create
@@ -54,10 +61,11 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // POST: UserManageController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> CreateAsync(IFormCollection collection)
         {
             try
             {
+              
                 return RedirectToAction(nameof(Index));
             }
             catch
