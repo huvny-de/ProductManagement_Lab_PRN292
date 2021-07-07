@@ -11,8 +11,26 @@ namespace ProductManagement_Lab_PRN292.Controllers
 {
     public class HomeController : Controller
     {
+        private RoleController _roleController;
         private readonly ILogger<HomeController> _logger;
-        
+
+        //SetAlert
+        public void SetAlert(string message, int type)
+        {
+            TempData["AlertMessage"] = message;
+            if (type == 1)
+            {
+                TempData["AlertType"] = "alert-success";
+            }
+            else if (type == 2)
+            {
+                TempData["AlertType"] = "alert-warning";
+            }
+            else if (type == 3)
+            {
+                TempData["AlertType"] = "alert-danger";
+            }
+        }
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -25,6 +43,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
         public IActionResult Privacy()
         {
+
             return View();
         }
 

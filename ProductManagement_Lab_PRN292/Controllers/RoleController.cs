@@ -17,27 +17,12 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly DbIdentity _context;
-        public RoleController(DbIdentity context, RoleManager<IdentityRole> roleManager)
+        private HomeController _homeController;
+        public RoleController(DbIdentity context, RoleManager<IdentityRole> roleManager, HomeController homeController)
         {
             _context = context;
             _roleManager = roleManager;
-        }
-        //SetAlert
-        protected void SetAlert(string message, int type)
-        {
-            TempData["AlertMessage"] = message;
-            if (type == 1)
-            {
-                TempData["AlertType"] = "alert-success";
-            }
-            else if (type == 2)
-            {
-                TempData["AlertType"] = "alert-warning";
-            }
-            else if (type == 3)
-            {
-                TempData["AlertType"] = "alert-danger";
-            }
+            _homeController = homeController;
         }
         // GET: RoleController
         public ActionResult Index()
@@ -141,12 +126,12 @@ namespace ProductManagement_Lab_PRN292.Controllers
                 if (role.Name == "Administrator")
                 {
 
-                    SetAlert("Cannot Delete", 3);
+                    _homeController.SetAlert("Cannot Delete", 3);
                     return RedirectToAction(nameof(Index));
                 }
                 if (role == null)
                 {
-                    SetAlert("Not Found Role", 3);
+                    _homeController.SetAlert("Not Found Role", 3);
                     return RedirectToAction(nameof(Index));
                 }
                 else
