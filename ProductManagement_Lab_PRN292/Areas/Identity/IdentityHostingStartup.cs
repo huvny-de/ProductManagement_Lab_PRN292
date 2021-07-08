@@ -15,13 +15,19 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity
     {
         public void Configure(IWebHostBuilder builder)
         {
-            builder.ConfigureServices((context, services) => {
+            builder.ConfigureServices((context, services) =>
+            {
 
                 services.AddDbContext<DbIdentity>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("ConnectionString")));
 
-                services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<AppUser>(options =>
+                {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+                })
                 .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<DbIdentity>();
             });

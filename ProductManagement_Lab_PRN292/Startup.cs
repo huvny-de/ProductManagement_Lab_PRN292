@@ -41,9 +41,11 @@ namespace ProductManagement_Lab_PRN292
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseHttpsRedirection();//+
+
             app.UseStaticFiles();
 
             app.UseRouting();
+
             app.UseAuthentication(); // +
 
             app.UseAuthorization();

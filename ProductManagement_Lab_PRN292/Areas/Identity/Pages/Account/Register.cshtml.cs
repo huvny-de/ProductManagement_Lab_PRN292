@@ -47,10 +47,28 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [Display(Name = "User Name")]
+            public string UserName { get; set; }
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
+            [Required]
+            [Display(Name = "First Name")]
 
+            public string FirstName { get; set; }
+            [Required]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+
+            [Required]
+            [Display(Name = "Phone Number")]
+            public string Phone { get; set; }
+            [Required]
+            [DataType(DataType.Date)]
+            [Display(Name = "Date of Birth")]
+
+            public DateTime Dob { get; set; }
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
@@ -75,7 +93,7 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new AppUser { UserName = Input.Email, Email = Input.Email };
+                var user = new AppUser { UserName = Input.UserName, FirstName = Input.FirstName, LastName = Input.LastName, Dob = Input.Dob, Email = Input.Email, PhoneNumber = Input.Phone };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
