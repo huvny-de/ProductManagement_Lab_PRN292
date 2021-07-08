@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.DbContexts
 {
-    public class DbProductManagement : DbContext
+    public class DbIdentity : DbContext
     {
-        public DbProductManagement(DbContextOptions<DbProductManagement> options) : base(options) { }
+        public DbIdentity(DbContextOptions<DbIdentity> options) : base(options) { }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
