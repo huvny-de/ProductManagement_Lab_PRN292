@@ -4,5 +4,5 @@
 // Write your JavaScript code.
 $(function () {
     $('#AlertBox').removeClass('hide');
-    $('#AlertBox').delay(2000).slideUp(500);
+    $('#AlertBox').delay(1500).slideUp(500);
 });

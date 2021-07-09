@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using ProductManagement_Lab_PRN292.DbContexts;
 using ProductManagement_Lab_PRN292.Models;
 using System;
 using System.Collections.Generic;
@@ -11,17 +10,32 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class RoleController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
-        private HomeController _homeController;
-        public RoleController(RoleManager<IdentityRole> roleManager, HomeController homeController)
+        public RoleController(RoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
-            _homeController = homeController;
+        }
+        //SetAlert
+        public void SetAlert(string message, int type)
+        {
+            TempData["AlertMessage"] = message;
+            if (type == 1)
+            {
+                TempData["AlertType"] = "alert-success";
+            }
+            else if (type == 2)
+            {
+                TempData["AlertType"] = "alert-warning";
+            }
+            else if (type == 3)
+            {
+                TempData["AlertType"] = "alert-danger";
+            }
         }
         // GET: RoleController
-
         public ActionResult Index()
         {
             var listRole = _roleManager.Roles.Select(x => new RoleViewModel
@@ -29,12 +43,12 @@ namespace ProductManagement_Lab_PRN292.Controllers
                 Id = x.Id,
                 RoleName = x.Name
             }
-                ).ToList();
+                   ).ToList();
             return View(listRole);
         }
 
         // GET: RoleController/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int id)
         {
             return View();
         }
@@ -42,42 +56,63 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // GET: RoleController/Create
         public ActionResult Create()
         {
+
             return View();
         }
 
         // POST: RoleController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> CreateAsync(IFormCollection collection)
+        public async Task<ActionResult> CreateAsync(string name, IFormCollection collection)
         {
+            name = collection["RoleName"];
             try
             {
-                var role = new IdentityRole
+                bool isExist = await _roleManager.RoleExistsAsync(name);
+                if (isExist)
                 {
-                    Id = collection["Id"],
-                    Name = collection["Name"],
-                    NormalizedName = "",
-                    ConcurrencyStamp = "",
-                };
-                var result = await _roleManager.CreateAsync(role);
-                return RedirectToAction(nameof(Index));
+                    SetAlert(String.Format("Role Name Was Existed: {0}", name), 2);
+                    return RedirectToAction(nameof(Create));
+
+                }
+                else
+                {
+                    var role = new IdentityRole
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Name = collection["RoleName"],
+                        NormalizedName = collection["RoleName"],
+                        ConcurrencyStamp = null,
+                    };
+                    var result = await _roleManager.CreateAsync(role);
+                    SetAlert(String.Format("Create New Role Successfully: {0}", name), 1);
+                    return RedirectToAction(nameof(Index));
+                }
             }
             catch
             {
-                return View();
+                return RedirectToAction(nameof(Index));
             }
         }
 
         // GET: RoleController/Edit/5
         public ActionResult Edit(string id)
         {
-            var roleDetail = _roleManager.Roles.Where(x => x.Id == id)
-                .Select(x => new RoleViewModel
-                {
-                    Id = x.Id,
-                    RoleName = x.Name
-                }).FirstOrDefault();
-            return View(roleDetail);
+            if (id == null)
+            {
+                SetAlert("Not Found Role", 2);
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                var roleDetail = _roleManager.Roles.Where(x => x.Id == id)
+                   .Select(x => new RoleViewModel
+                   {
+                       Id = x.Id,
+                       RoleName = x.Name
+                   }).FirstOrDefault();
+                return View(roleDetail);
+            }
         }
 
         // POST: RoleController/Edit/5
@@ -85,32 +120,59 @@ namespace ProductManagement_Lab_PRN292.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> EditAsync(string id, IFormCollection collection)
         {
-            try
-            {
-                var role = _roleManager.Roles.Where(x => x.Id == id).FirstOrDefault();
-                role.Name = collection["Name"];
-                role.NormalizedName = collection["NormalizedName"];
+            string name = collection["RoleName"];
+            bool isExist = await _roleManager.RoleExistsAsync(name);
 
-                var result = await _roleManager.UpdateAsync(role);
+            if (id == null)
+            {
+                SetAlert("Not Found Role", 2);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else if (isExist)
             {
-                return View();
+                SetAlert(String.Format("Role Name Was Existed: {0}", name), 2);
+                return RedirectToAction(nameof(Edit));
+            }
+            else
+            {
+                try
+                {
+                    var role = _roleManager.Roles.Where(x => x.Id == id).FirstOrDefault();
+                    role.Name = collection["RoleName"];
+                    role.NormalizedName = collection["RoleName"];
+                    var result = await _roleManager.UpdateAsync(role);
+                    SetAlert("Update Role Successfully", 1);
+
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
             }
         }
+
 
         // GET: RoleController/Delete/5
         public ActionResult Delete(string id)
         {
-            var roleDetail = _roleManager.Roles.Where(x => x.Id == id)
-                .Select(x => new RoleViewModel
-                {
-                    Id = x.Id,
-                    RoleName = x.Name
-                }).FirstOrDefault();
-            return View(roleDetail);
+            if (id == null)
+            {
+                SetAlert("Not Found Role", 2);
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                var roleDetail = _roleManager.Roles.Where(x => x.Id == id)
+                      .Select(x => new RoleViewModel
+                      {
+                          Id = x.Id,
+                          RoleName = x.Name
+                      }).FirstOrDefault();
+                return View(roleDetail);
+            }
         }
+
         // POST: RoleController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -123,17 +185,18 @@ namespace ProductManagement_Lab_PRN292.Controllers
                 if (role.Name == "Administrator")
                 {
 
-                    _homeController.SetAlert("Cannot Delete", 3);
+                    SetAlert(String.Format("Cannot Delete Role: {0}", role.Name), 3);
+
                     return RedirectToAction(nameof(Index));
                 }
                 if (role == null)
                 {
-                    _homeController.SetAlert("Not Found Role", 3);
+                    SetAlert("Not Found Role", 3);
                     return RedirectToAction(nameof(Index));
                 }
                 else
                 {
-                    _homeController.SetAlert("Delete Successful", 1);
+                    SetAlert("Delete Successfully", 1);
                     await _roleManager.DeleteAsync(role);
                     return RedirectToAction(nameof(Index));
                 }
