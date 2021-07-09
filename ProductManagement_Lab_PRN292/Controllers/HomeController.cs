@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProductManagement_Lab_PRN292.Models;
 using System;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
+
     public class HomeController : Controller
     {
-        private RoleController _roleController;
         private readonly ILogger<HomeController> _logger;
 
         //SetAlert

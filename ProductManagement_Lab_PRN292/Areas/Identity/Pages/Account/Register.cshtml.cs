@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using ProductManagement_Lab_PRN292.Entities;
+using ProductManagement_Lab_PRN292.Validations;
 
 namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account
 {
@@ -64,7 +65,8 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account
             [Required]
             [Display(Name = "Phone Number")]
             public string Phone { get; set; }
-            [Required]
+            [MinimumAge(18, ErrorMessage = "User must be 18 years or older")]
+            [Required(ErrorMessage = "Date Of Birth is Required")]
             [DataType(DataType.Date)]
             [Display(Name = "Date of Birth")]
 

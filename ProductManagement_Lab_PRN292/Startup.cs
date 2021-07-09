@@ -26,7 +26,7 @@ namespace ProductManagement_Lab_PRN292
         {
             services.AddRazorPages();
             services.AddControllersWithViews();
-            services.AddDbContext<DbIdentity>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+           services.AddDbContext<DbIdentity>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

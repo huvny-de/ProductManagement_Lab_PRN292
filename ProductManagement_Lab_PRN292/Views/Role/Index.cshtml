@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<ProductManagement_Lab_PRN292.Models.RoleViewModel>
+
 @{
     ViewData["Title"] = "Index";
 }
@@ -12,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                Id
+                @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                Role Name
+                @Html.DisplayNameFor(model => model.RoleName)
             </th>
             <th></th>
         </tr>

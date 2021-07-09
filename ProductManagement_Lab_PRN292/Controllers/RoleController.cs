@@ -11,22 +11,17 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
-    [Authorize(Roles = "Administrator")]
-
     public class RoleController : Controller
     {
- 
-
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly DbIdentity _context;
         private HomeController _homeController;
-        public RoleController(DbIdentity context, RoleManager<IdentityRole> roleManager, HomeController homeController)
+        public RoleController(RoleManager<IdentityRole> roleManager, HomeController homeController)
         {
-            _context = context;
             _roleManager = roleManager;
             _homeController = homeController;
         }
         // GET: RoleController
+
         public ActionResult Index()
         {
             var listRole = _roleManager.Roles.Select(x => new RoleViewModel

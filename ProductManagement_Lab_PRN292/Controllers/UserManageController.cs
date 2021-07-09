@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ProductManagement_Lab_PRN292.DbContexts;
@@ -11,6 +12,8 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
+    [Authorize]
+
     public class UserManageController : Controller
     {
         private readonly DbIdentity _context;
@@ -65,7 +68,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
         {
             try
             {
-              
+
                 return RedirectToAction(nameof(Index));
             }
             catch
