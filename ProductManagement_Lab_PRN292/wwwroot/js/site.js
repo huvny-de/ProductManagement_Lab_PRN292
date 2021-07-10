@@ -2,3 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+$(function () {
+    $('#AlertBox').removeClass('hide');
+    $('#AlertBox').delay(1500).slideUp(500);
+});
