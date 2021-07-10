@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProductManagement_Lab_PRN292.Models;
 using System;
@@ -9,10 +10,13 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
+        //SetAlert
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -25,6 +29,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
         public IActionResult Privacy()
         {
+
             return View();
         }
 
