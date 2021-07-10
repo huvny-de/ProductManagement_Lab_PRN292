@@ -59,18 +59,18 @@ namespace ProductManagement_Lab_PRN292.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-                return View();
+            return View();
         }
 
         // GET: CategoriesController/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
             var category = await _context.Categories.FindAsync(id);
-            if(category == null)
+            if (category == null)
             {
                 return NotFound();
             }
