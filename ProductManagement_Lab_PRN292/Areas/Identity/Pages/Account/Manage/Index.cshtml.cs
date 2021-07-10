@@ -33,21 +33,31 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
+            //FirstName
+            [Display(Name = "FirstName")]
+            public string FirstName { get; set; }
+            //LastName
+            [Display(Name = "LastName")]
+            public string LastName { get; set; }
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+
         }
 
         private async Task LoadAsync(AppUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-
+            var firstName = user.FirstName;
+            var lastName = user.LastName;
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                FirstName = firstName,
+                LastName = lastName
             };
         }
 
@@ -78,6 +88,8 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account.Manage
             }
 
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            var firstName = user.FirstName;
+            var lastName = user.LastName;
             if (Input.PhoneNumber != phoneNumber)
             {
                 var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
@@ -87,6 +99,27 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
+            if (Input.FirstName != firstName)
+            {
+                user.FirstName = Input.FirstName;
+                var setFirstNameResult = await _userManager.UpdateAsync(user);
+                if (!setFirstNameResult.Succeeded)
+                {
+                    StatusMessage = "Unexpected error when trying to set First Name.";
+                    return RedirectToPage();
+                }
+            }
+            if (Input.LastName != lastName)
+            {
+                user.LastName = Input.LastName;
+                var setLastNameResult = await _userManager.UpdateAsync(user);
+                if (!setLastNameResult.Succeeded)
+                {
+                    StatusMessage = "Unexpected error when trying to set Last Name.";
+                    return RedirectToPage();
+                }
+            }
+
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";

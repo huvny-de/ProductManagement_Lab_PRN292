@@ -171,3 +171,7 @@ C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Role\Delete.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Role\Edit.cshtml.g.cs
+C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\UserManage\Details.cshtml.g.cs
+C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\UserManage\Create.cshtml.g.cs
+C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\UserManage\Delete.cshtml.g.cs
+C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\UserManage\Edit.cshtml.g.cs

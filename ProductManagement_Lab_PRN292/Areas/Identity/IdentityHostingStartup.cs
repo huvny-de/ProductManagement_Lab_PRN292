@@ -27,6 +27,7 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity
                     options.SignIn.RequireConfirmedAccount = false;
                     options.Password.RequireLowercase = false;
                     options.Password.RequireUppercase = false;
+                    options.Lockout.AllowedForNewUsers = false;
                 })
                 .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<DbIdentity>();

@@ -14,7 +14,6 @@ namespace ProductManagement_Lab_PRN292.Validations
         {
             _minimumAge = minimumAge;
         }
-
         public override bool IsValid(object value)
         {
             DateTime date;
@@ -22,7 +21,6 @@ namespace ProductManagement_Lab_PRN292.Validations
             {
                 return date.AddYears(_minimumAge) < DateTime.Now;
             }
-
             return false;
         }
     }

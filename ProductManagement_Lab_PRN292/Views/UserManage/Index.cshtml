@@ -17,10 +17,7 @@
                 User Name
             </th>
             <th>
-                First Name
-            </th>
-            <th>
-                Last Name
+                Full Name
             </th>
             <th>
                 Email
@@ -29,10 +26,13 @@
                 Phone Number
             </th>
             <th>
-                Date of Birth
+                Age
             </th>
+            @*<th>
+                    Role
+                </th>*@
             <th>
-                Role
+                Status
             </th>
             <th></th>
         </tr>
@@ -46,10 +46,7 @@
                     @Html.DisplayFor(modelItem => item.UserName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
+                    @Html.DisplayFor(modelItem => item.FirstName) @item.LastName
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Email)
@@ -59,10 +56,27 @@
                 </td>
                 <td>
                     @*@Html.DisplayFor(modelItem => item.Dob)*@
-                    @Convert.ToString(string.Format("{0:dd/MM/yyyy}", item.Dob))
+                    @{
+                        int now = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
+                        int dob = int.Parse(item.Dob.ToString("yyyyMMdd"));
+                        int age = (now - dob) / 10000;
+                    }
+                    @*@Convert.ToString(string.Format("{0:dd/MM/yyyy}", item.Dob))*@
+                    @age
                 </td>
                 <td>
-                        
+                    @{
+                        string Status = "";
+
+                        if (item.Lockout)
+                        {
+                            Status = "Suspended";
+                        }
+                        else { Status = "Active"; }
+                    }
+                    @Status
+                </td>
+                <td>
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

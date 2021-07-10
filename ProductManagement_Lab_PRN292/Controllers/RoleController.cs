@@ -63,9 +63,9 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // POST: RoleController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> CreateAsync(string name, IFormCollection collection)
+        public async Task<ActionResult> CreateAsync(IFormCollection collection)
         {
-            name = collection["RoleName"];
+            string name = collection["RoleName"];
             try
             {
                 bool isExist = await _roleManager.RoleExistsAsync(name);
