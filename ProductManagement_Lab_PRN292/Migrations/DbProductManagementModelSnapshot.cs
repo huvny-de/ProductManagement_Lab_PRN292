@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProductManagement_Lab_PRN292.DbContexts;
 
-namespace ProductManagement_Lab_PRN292.Migrations
+namespace ProductManagement_Lab_PRN292.Migrations.DbProductManagementMigrations
 {
-    [DbContext(typeof(WebContext))]
+    [DbContext(typeof(DbProductManagement))]
     partial class DbProductManagementModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -33,6 +33,18 @@ namespace ProductManagement_Lab_PRN292.Migrations
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            CategoryName = "Category 1"
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            CategoryName = "Category 2"
+                        });
                 });
 
             modelBuilder.Entity("ProductManagement_Lab_PRN292.Entities.Product", b =>
@@ -52,8 +64,8 @@ namespace ProductManagement_Lab_PRN292.Migrations
                     b.Property<string>("Photo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -64,6 +76,26 @@ namespace ProductManagement_Lab_PRN292.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Amount = 100,
+                            CategoryId = 1,
+                            Photo = "san-pham-1.jpg",
+                            Price = 200m,
+                            ProductName = "ProductName1"
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            Amount = 200,
+                            CategoryId = 2,
+                            Photo = "san-pham-2.jpg",
+                            Price = 300m,
+                            ProductName = "ProductName2"
+                        });
                 });
 
             modelBuilder.Entity("ProductManagement_Lab_PRN292.Entities.Product", b =>
