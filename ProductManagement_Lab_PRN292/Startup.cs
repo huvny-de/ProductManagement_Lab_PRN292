@@ -25,8 +25,12 @@ namespace ProductManagement_Lab_PRN292
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             services.AddRazorPages();
             services.AddDbContext<DbIdentity>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+
+            services.AddDbContext<WebContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+
         }
 
         //bat mess

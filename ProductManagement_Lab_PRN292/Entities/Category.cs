@@ -9,12 +9,13 @@ namespace ProductManagement_Lab_PRN292.Entities
 {
     public class Category
     {
+        [Key]
         [Required]
         [DisplayName("Category ID")]
-        public string CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
         [Required]
-        [DisplayName("Name")]
+        [DisplayName("Category Name")]
         public string CategoryName { get; set; }
 
         public ICollection<Product> Products { get; set; }

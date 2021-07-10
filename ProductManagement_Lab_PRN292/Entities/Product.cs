@@ -10,13 +10,13 @@ namespace ProductManagement_Lab_PRN292.Entities
 {
     public class Product
     {
+        [Key]
         [Required]
-        [MaxLength(6)]
         [DisplayName("Product ID")]
-        public string ProductId { get; set; }
+        public int ProductId { get; set; }
 
         [Required]
-        [DisplayName("Name")]
+        [DisplayName("Product Name")]
         public string ProductName { get; set; }
 
         [Required]
@@ -29,10 +29,9 @@ namespace ProductManagement_Lab_PRN292.Entities
         public string Photo { get; set; }
 
         [Required]
-        [ForeignKey("Cateid")]
         [DisplayName("Category")]
-        public string CategoryOfProduct { get; set; }
-        public Category CateId { get; set; }
+        public int? CategoryId { get; set; }
+        public Category Category { get; set; }
 
     }
 }
