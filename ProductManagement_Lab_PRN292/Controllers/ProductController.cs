@@ -47,6 +47,31 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
             return View(product);
         }
+        public ActionResult IndexbyCategory(int categoryId)
+        {
+            if (_context.Categories.Find(categoryId) == null)
+            {
+
+                return RedirectToAction(nameof(Create));
+            }
+            else
+            {
+                var listProduct = _context.Products.Where(x => x.CategoryId == categoryId).Select(p => new Product
+                {
+                    ProductId = p.ProductId,
+                    ProductName = p.ProductName,
+                    Amount = p.Amount,
+                    Price = p.Price,
+                    Photo = p.Photo,
+                    CategoryId = p.CategoryId
+
+                });
+                return View(listProduct);
+
+            }
+
+
+        }
 
         // GET: ProductsController/Create
         public IActionResult Create()

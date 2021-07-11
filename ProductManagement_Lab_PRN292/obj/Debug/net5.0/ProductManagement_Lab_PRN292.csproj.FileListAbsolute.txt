@@ -206,3 +206,5 @@ C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\UserManage\UsersWithRoles.cshtml.g.cs
+C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Product\IndexbyCategory.cshtml.g.cs

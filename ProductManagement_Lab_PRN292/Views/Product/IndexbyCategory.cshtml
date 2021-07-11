@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ProductManagement_Lab_PRN292.Entities.Product>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "IndexbyCategory";
 }
 
-<h1>Index</h1>
+<h1>IndexbyCategory</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -27,9 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Category)
             </th>
-            <th>
-                Action
-            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -39,13 +37,13 @@
                 @Html.DisplayFor(modelItem => item.ProductName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)&#8363
+                @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)
             </td>
             <td>
-                <img src="~/images/@item.Photo" width="150" />
+                @Html.DisplayFor(modelItem => item.Photo)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Category.CategoryName)

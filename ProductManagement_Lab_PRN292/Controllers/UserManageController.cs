@@ -23,7 +23,9 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
 
         // GET: UserManageController
-        public UserManageController(DbIdentity context, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager)
+        public UserManageController(DbIdentity context, UserManager<AppUser> userManager,
+            RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager
+            )
         {
             _context = context;
             _userManager = userManager;
@@ -65,6 +67,31 @@ namespace ProductManagement_Lab_PRN292.Controllers
         }
 
 
+        public ActionResult UsersWithRoles()
+        {
+            //var test = _userManager.Users.Select(x => new UserWithRoleViewModel
+            //{
+            //    UserId = x.Id,
+            //    UserName = x.UserName,
+            //    Role = _userManager.GetRolesAsync(_userManager.FindByIdAsync(x.Id).Result).Result.ToString()
+            //}).ToList();
+            var usersWithRoles = (from user in _context.Users
+                                  select new
+                                  {
+                                      UserId = user.Id,
+                                      UserName = user.UserName,
+                                      RoleName = (from userRole in _context.UserRoles
+                                                  join role in _roleManager.Roles on userRole.RoleId
+                                                  equals role.Id
+                                                  select role.Name).ToList()
+                                  }).ToList().Select(p => new UserWithRoleViewModel
+                                  {
+                                      UserId = p.UserId,
+                                      UserName = p.UserName,
+                                      Role = string.Join(",", p.RoleName)
+                                  });
+            return View(usersWithRoles);
+        }
 
         // GET: UserManageController/Details/5
         public ActionResult Details(string id)
