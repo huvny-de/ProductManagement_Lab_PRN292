@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Henry\\Projects\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj": {}
+    "C:\\Users\\lehuuhieu\\Desktop\\Semester 5\\PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj": {}
   },
   "projects": {
-    "C:\\Henry\\Projects\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj": {
+    "C:\\Users\\lehuuhieu\\Desktop\\Semester 5\\PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
+        "projectUniqueName": "C:\\Users\\lehuuhieu\\Desktop\\Semester 5\\PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
         "projectName": "ProductManagement_Lab_PRN292",
-        "projectPath": "C:\\Henry\\Projects\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\obj\\",
+        "projectPath": "C:\\Users\\lehuuhieu\\Desktop\\Semester 5\\PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
+        "packagesPath": "C:\\Users\\lehuuhieu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lehuuhieu\\Desktop\\Semester 5\\PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lehuuhieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
