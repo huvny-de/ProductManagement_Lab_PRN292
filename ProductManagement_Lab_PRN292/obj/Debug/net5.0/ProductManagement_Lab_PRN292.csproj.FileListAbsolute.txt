@@ -206,5 +206,4 @@ C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\UserManage\UsersWithRoles.cshtml.g.cs
-C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\Razor\Views\Product\index2.cshtml.g.cs
 C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\obj\Debug\net5.0\ProductManagement_Lab_PRN292.csproj.AssemblyReference.cache
