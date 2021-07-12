@@ -172,9 +172,17 @@ namespace ProductManagement_Lab_PRN292.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _context.Categories.FindAsync(id);
-            _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
+            var product = await _context.Products.Where(x => x.CategoryId == id).ToListAsync();
+            if (product == null)
+            {
+                SetAlert("Delete Category Successfully", 1);
+                _context.Categories.Remove(category);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            SetAlert("Existing Products in the Category", 2);
             return RedirectToAction(nameof(Index));
+
         }
 
         private bool CategoryExists(int id)
