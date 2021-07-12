@@ -53,7 +53,7 @@ namespace ProductManagement_Lab_PRN292
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=UserManage}/{action=Index}/{id?}");
+                    pattern: "{controller=Product}/{action=Index}/{id?}");
                 endpoints.MapRazorPages(); // de goi webform truc tiep
             });
         }
