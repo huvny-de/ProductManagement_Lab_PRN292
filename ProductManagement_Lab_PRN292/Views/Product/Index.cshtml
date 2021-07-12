@@ -6,9 +6,10 @@
 }
 
 <h1> <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Product</a></h1>
-
+<p>
+    <a asp-action="Create">Create New Product</a>
+</p>
 <div class="my-4 row">
-    <a asp-action="Create" class="col-md-8">Create New</a>
     <form asp-controller="Product" asp-action="Index" method="post">
         <p>
 
