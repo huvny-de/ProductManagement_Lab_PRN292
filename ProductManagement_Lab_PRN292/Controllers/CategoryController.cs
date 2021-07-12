@@ -172,8 +172,8 @@ namespace ProductManagement_Lab_PRN292.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _context.Categories.FindAsync(id);
-            var product = await _context.Products.Where(x => x.CategoryId == id).ToListAsync();
-            if (product == null)
+            List<Product> checkProd = await _context.Products.Where(x => x.CategoryId == id).ToListAsync();
+            if (checkProd.Count == 0)
             {
                 SetAlert("Delete Category Successfully", 1);
                 _context.Categories.Remove(category);
