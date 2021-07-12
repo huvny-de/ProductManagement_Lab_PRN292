@@ -68,14 +68,12 @@ namespace ProductManagement_Lab_PRN292.Controllers
                 products = products.Where(s => s.ProductName.Contains(searchString));
                 var categories = new SelectList(cateName.Distinct().ToList());
                 return View(getModel(categories, await products.Include(p => p.Category).ToListAsync()));
-
             }
             if (string.IsNullOrEmpty(searchString) && productCategory.Equals("all"))
             {
                 SetAlert("Input Seach Name", 2);
                 return RedirectToAction(nameof(Index));
             }
-
             // get cate only
             if (string.IsNullOrEmpty(searchString) && !productCategory.Equals("all"))
             {

@@ -14,7 +14,7 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
-    <ShowAllFiles>true</ShowAllFiles>
+    <ShowAllFiles>false</ShowAllFiles>
     <WebStackScaffolding_DbContextTypeFullName>ProductManagement_Lab_PRN292.DbContexts.DbProductManagement</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
 </Project>

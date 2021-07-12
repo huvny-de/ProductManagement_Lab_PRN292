@@ -13,7 +13,23 @@ namespace ProductManagement_Lab_PRN292.Controllers
     public class CategoryController : Controller
     {
         private readonly DbProductManagement _context;
-
+        //SetAlert
+        public void SetAlert(string message, int type)
+        {
+            TempData["AlertMessage"] = message;
+            if (type == 1)
+            {
+                TempData["AlertType"] = "alert-success";
+            }
+            else if (type == 2)
+            {
+                TempData["AlertType"] = "alert-warning";
+            }
+            else if (type == 3)
+            {
+                TempData["AlertType"] = "alert-danger";
+            }
+        }
         public CategoryController(DbProductManagement context)
         {
             _context = context;
@@ -23,7 +39,25 @@ namespace ProductManagement_Lab_PRN292.Controllers
         {
             return View(_context.Categories.ToList());
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> IndexAsync(string searchString)
+        {
+            var categories = from c in _context.Categories
+                             select c;
 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                categories = categories.Where(s => s.CategoryName.Contains(searchString));
+                return View(await categories.ToListAsync());
+            }
+            else
+            {
+                SetAlert("Input Search Name", 2);
+                return RedirectToAction(nameof(Index));
+            }
+
+        }
         // GET: CategoriesController/Details/5
         public ActionResult Details(int? id)
         {
