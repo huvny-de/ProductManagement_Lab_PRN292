@@ -9,8 +9,9 @@ namespace ProductManagement_Lab_PRN292.Models
 {
     public class ListProductByCategoryViewModel
     {
-        public string SelectedCategory { get; set; }
-        public List<SelectListItem> Categories { get; set; } = new List<SelectListItem>();
-        public List<Product> SearchResults { get; set; } = new List<Product>();
+        public List<Product> Products { get; set; }
+        public SelectList Categories { get; set; }
+        public int ProductCategory { get; set; }
+        public string SearchString { get; set; }
     }
 }

@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
+#line 1 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
 using ProductManagement_Lab_PRN292;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
+#line 2 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
 using ProductManagement_Lab_PRN292.Models;
 
 #line default
@@ -61,7 +61,7 @@ using ProductManagement_Lab_PRN292.Models;
         {
             WriteLiteral("\r\n");
 #nullable restore
-#line 3 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Role\Index.cshtml"
+#line 3 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Role\Index.cshtml"
   
     ViewData["Title"] = "Index";
 

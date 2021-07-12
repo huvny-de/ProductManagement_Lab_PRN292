@@ -23,11 +23,103 @@ namespace ProductManagement_Lab_PRN292.Controllers
             webHostEnvironment = _webHostEnvironment;
             _context = context;
         }
+        //SetAlert
+        public void SetAlert(string message, int type)
+        {
+            TempData["AlertMessage"] = message;
+            if (type == 1)
+            {
+                TempData["AlertType"] = "alert-success";
+            }
+            else if (type == 2)
+            {
+                TempData["AlertType"] = "alert-warning";
+            }
+            else if (type == 3)
+            {
+                TempData["AlertType"] = "alert-danger";
+            }
+        }
         // GET: ProductsController
         public async Task<IActionResult> Index()
         {
-            var webContext = _context.Products.Include(p => p.Category);
-            return View(await webContext.ToListAsync());
+            //var products = from p in _context.Products select p;
+            //if (!String.IsNullOrEmpty(searchString))
+            //{
+            //    products = products.Where(x => x.ProductName.Contains(searchString)).Include(p => p.Category);
+            //    return View(await products.ToListAsync());
+            //}
+            //else
+            IQueryable<string> cateName = from c in _context.Categories
+                                          orderby c.CategoryId
+                                          select c.CategoryName;
+            var productByCategory = new ListProductByCategoryViewModel
+            {
+                Categories = new SelectList(await cateName.Distinct().ToListAsync()),
+                Products = await _context.Products.Include(p => p.Category).ToListAsync()
+            };
+            return View(productByCategory);
+
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(string searchString, string productCategory)
+        {
+            // Use LINQ to get list of genres.
+
+            IQueryable<string> cateName = from c in _context.Categories
+                                          orderby c.CategoryId
+                                          select c.CategoryName;
+
+            var products = from m in _context.Products
+                           select m;
+
+            // search only
+            if (!string.IsNullOrEmpty(searchString) && productCategory.Equals("all"))
+            {
+                products = products.Where(s => s.ProductName.Contains(searchString));
+                var listProduct = new ListProductByCategoryViewModel
+                {
+                    Categories = new SelectList(cateName.Distinct().ToList()),
+                    Products = await products.Include(p => p.Category).ToListAsync()
+                };
+                return View(listProduct);
+            }
+            if (string.IsNullOrEmpty(searchString) && productCategory.Equals("all"))
+            {
+                SetAlert("Input Seach Name", 2);
+                return RedirectToAction(nameof(Index));
+            }
+
+            // get cate only
+            if (string.IsNullOrEmpty(searchString) && !productCategory.Equals("all"))
+            {
+                products = products.Where(x => x.Category.CategoryName == productCategory);
+                var listProduct = new ListProductByCategoryViewModel
+                {
+                    Categories = new SelectList(cateName.Distinct().ToList()),
+                    Products = await products.Include(p => p.Category).ToListAsync()
+                };
+                return View(listProduct);
+            }
+            // search product in category
+            else
+            {
+                products = products.Where(x => x.Category.CategoryName == productCategory)
+                    .Where(s => s.ProductName.Contains(searchString));
+
+
+                var productByCategory = new ListProductByCategoryViewModel
+                {
+                    Categories = new SelectList(await cateName.Distinct().ToListAsync()),
+                    Products = await products.Include(p => p.Category).ToListAsync()
+                };
+                return View(productByCategory);
+            }
+
+
+
+
         }
 
         // GET: ProductsController/Details/5
@@ -173,52 +265,6 @@ namespace ProductManagement_Lab_PRN292.Controllers
         {
             return _context.Products.Any(e => e.ProductId == id);
         }
-        //Get ListProductByCategory
-        private List<SelectListItem> buildCategories(string selectedItem = "")
-        {
-            List<SelectListItem> lst = new List<SelectListItem>();
-            foreach (Category cate in _context.Categories)
-            {
-                lst.Add(new SelectListItem() { Text = cate.CategoryName, Value = cate.CategoryId.ToString() });
-            }
 
-            if (!string.IsNullOrEmpty(selectedItem))
-            {
-                lst.Find(x => x.Value.ToLower() == selectedItem.ToLower()).Selected = true;
-            }
-            return lst;
-        }
-        private List<Product> mockProductCollection()
-        {
-            List<Product> products = new List<Product>();
-            products = _context.Products.ToList();
-            return products;
-        }
-        public ActionResult ListByCategory()
-        {
-            ListProductByCategoryViewModel listbyCate = new ListProductByCategoryViewModel();
-            listbyCate.Categories = buildCategories();
-
-            return View(listbyCate);
-        }
-        // Post ListProductByCategory
-        [HttpPost]
-        public ActionResult listByCategory(ListProductByCategoryViewModel listByCate)
-        {
-            if (ModelState.IsValid)
-            {
-                if (listByCate.SelectedCategory != null)
-                {
-                    //Binding dropdown again
-                    listByCate.Categories = buildCategories(listByCate.SelectedCategory);
-
-                    var products = mockProductCollection();
-                    var results = products.FindAll(x => x.CategoryId.ToString() ==
-                                       listByCate.SelectedCategory.ToLower());
-                    listByCate.SearchResults = results;
-                }
-            }
-            return View(listByCate);
-        }
     }
 }
