@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
 using ProductManagement_Lab_PRN292;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\_ViewImports.cshtml"
 using ProductManagement_Lab_PRN292.Models;
 
 #line default
@@ -31,10 +31,11 @@ using ProductManagement_Lab_PRN292.Models;
     public class Views_Product_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ProductManagement_Lab_PRN292.Entities.Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("width", new global::Microsoft.AspNetCore.Html.HtmlString("150"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Details", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Delete", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("col-md-8"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("width", new global::Microsoft.AspNetCore.Html.HtmlString("150"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Details", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Delete", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -56,13 +57,14 @@ using ProductManagement_Lab_PRN292.Models;
             }
         }
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
 #nullable restore
-#line 3 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+#line 4 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
   
     ViewData["Title"] = "Index";
 
@@ -78,6 +80,7 @@ using ProductManagement_Lab_PRN292.Models;
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_0.Value;
             __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {
@@ -85,9 +88,54 @@ using ProductManagement_Lab_PRN292.Models;
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\r\n</p>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th>\r\n                ");
+            WriteLiteral("\r\n    <div class=\"float-right row col-md-4\">\r\n        <label class=\"inputState col-md-4 m-auto\">Category</label>\r\n        <select id=\"inputState\" class=\"form-control col\">\r\n            ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e43086c25ee2cad0e23f0b55bd6d5e707ebec17270", async() => {
+                WriteLiteral("Choose...");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            BeginWriteTagHelperAttribute();
+            __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+            __tagHelperExecutionContext.AddHtmlAttribute("selected", Html.Raw(__tagHelperStringValueBuffer), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.Minimized);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n            ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e43086c25ee2cad0e23f0b55bd6d5e707ebec18554", async() => {
+                WriteLiteral("1");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n            ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e43086c25ee2cad0e23f0b55bd6d5e707ebec19519", async() => {
+                WriteLiteral("2");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n        </select>\r\n    </div>\r\n</div>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th>\r\n                ");
 #nullable restore
-#line 16 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+#line 25 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.ProductName));
 
 #line default
@@ -95,7 +143,7 @@ using ProductManagement_Lab_PRN292.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
 #nullable restore
-#line 19 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+#line 28 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Price));
 
 #line default
@@ -103,7 +151,7 @@ using ProductManagement_Lab_PRN292.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
 #nullable restore
-#line 22 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+#line 31 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Amount));
 
 #line default
@@ -111,7 +159,7 @@ using ProductManagement_Lab_PRN292.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
 #nullable restore
-#line 25 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+#line 34 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Photo));
 
 #line default
@@ -119,7 +167,7 @@ using ProductManagement_Lab_PRN292.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
 #nullable restore
-#line 28 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+#line 37 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Category));
 
 #line default
@@ -127,32 +175,33 @@ using ProductManagement_Lab_PRN292.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                Action\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
 #nullable restore
-#line 36 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
- foreach (var item in Model) {
+#line 45 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+         foreach (var item in Model)
+        {
 
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("        <tr>\r\n            <td>\r\n                ");
+            WriteLiteral("            <tr>\r\n                <td>\r\n                    ");
 #nullable restore
-#line 39 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-           Write(Html.DisplayFor(modelItem => item.ProductName));
+#line 49 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+               Write(Html.DisplayFor(modelItem => item.ProductName));
 
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
+            WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
 #nullable restore
-#line 42 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-           Write(Html.DisplayFor(modelItem => item.Price));
+#line 52 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+               Write(Html.DisplayFor(modelItem => item.Price));
 
 #line default
 #line hidden
 #nullable disable
             WriteLiteral("&#8363\r\n            </td>\r\n            <td>\r\n                ");
 #nullable restore
-#line 45 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-           Write(Html.DisplayFor(modelItem => item.Amount));
+#line 55 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+               Write(Html.DisplayFor(modelItem => item.Amount));
 
 #line default
 #line hidden
@@ -173,7 +222,7 @@ AddHtmlAttributeValue("", 1232, item.Photo, 1232, 11, false);
 #line hidden
 #nullable disable
             EndAddHtmlAttributeValues(__tagHelperExecutionContext);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {
@@ -181,10 +230,10 @@ AddHtmlAttributeValue("", 1232, item.Photo, 1232, 11, false);
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
+            WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
 #nullable restore
-#line 51 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-           Write(Html.DisplayFor(modelItem => item.Category.CategoryName));
+#line 61 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+               Write(Html.DisplayFor(modelItem => item.Category.CategoryName));
 
 #line default
 #line hidden
@@ -196,16 +245,16 @@ AddHtmlAttributeValue("", 1232, item.Photo, 1232, 11, false);
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_2.Value;
-            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_2);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_3.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
             if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
             {
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
 #nullable restore
-#line 54 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-                                       WriteLiteral(item.ProductId);
+#line 64 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+                                           WriteLiteral(item.ProductId);
 
 #line default
 #line hidden
@@ -227,16 +276,16 @@ AddHtmlAttributeValue("", 1232, item.Photo, 1232, 11, false);
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_3.Value;
-            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_4.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
             if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
             {
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
 #nullable restore
-#line 55 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-                                          WriteLiteral(item.ProductId);
+#line 65 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+                                              WriteLiteral(item.ProductId);
 
 #line default
 #line hidden
@@ -258,16 +307,16 @@ AddHtmlAttributeValue("", 1232, item.Photo, 1232, 11, false);
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_4.Value;
-            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_5.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_5);
             if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
             {
                 throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
             }
             BeginWriteTagHelperAttribute();
 #nullable restore
-#line 56 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-                                         WriteLiteral(item.ProductId);
+#line 66 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+                                             WriteLiteral(item.ProductId);
 
 #line default
 #line hidden
@@ -282,10 +331,10 @@ AddHtmlAttributeValue("", 1232, item.Photo, 1232, 11, false);
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\r\n            </td>\r\n        </tr>\r\n");
+            WriteLiteral("\r\n                </td>\r\n            </tr>\r\n");
 #nullable restore
-#line 59 "C:\Henry\Projects\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
-}
+#line 69 "C:\Users\lehuuhieu\Desktop\Semester 5\PRN292\ProductManagement_Lab_PRN292\ProductManagement_Lab_PRN292\Views\Product\Index.cshtml"
+        }
 
 #line default
 #line hidden

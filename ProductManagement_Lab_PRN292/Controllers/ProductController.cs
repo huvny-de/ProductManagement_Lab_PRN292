@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProductManagement_Lab_PRN292.DbContexts;
 using ProductManagement_Lab_PRN292.Entities;
+using ProductManagement_Lab_PRN292.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -47,31 +48,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
             return View(product);
         }
-        public ActionResult IndexbyCategory(int categoryId)
-        {
-            if (_context.Categories.Find(categoryId) == null)
-            {
 
-                return RedirectToAction(nameof(Create));
-            }
-            else
-            {
-                var listProduct = _context.Products.Where(x => x.CategoryId == categoryId).Select(p => new Product
-                {
-                    ProductId = p.ProductId,
-                    ProductName = p.ProductName,
-                    Amount = p.Amount,
-                    Price = p.Price,
-                    Photo = p.Photo,
-                    CategoryId = p.CategoryId
-
-                });
-                return View(listProduct);
-
-            }
-
-
-        }
 
         // GET: ProductsController/Create
         public IActionResult Create()
@@ -195,6 +172,53 @@ namespace ProductManagement_Lab_PRN292.Controllers
         private bool ProductExists(int id)
         {
             return _context.Products.Any(e => e.ProductId == id);
+        }
+        //Get ListProductByCategory
+        private List<SelectListItem> buildCategories(string selectedItem = "")
+        {
+            List<SelectListItem> lst = new List<SelectListItem>();
+            foreach (Category cate in _context.Categories)
+            {
+                lst.Add(new SelectListItem() { Text = cate.CategoryName, Value = cate.CategoryId.ToString() });
+            }
+
+            if (!string.IsNullOrEmpty(selectedItem))
+            {
+                lst.Find(x => x.Value.ToLower() == selectedItem.ToLower()).Selected = true;
+            }
+            return lst;
+        }
+        private List<Product> mockProductCollection()
+        {
+            List<Product> products = new List<Product>();
+            products = _context.Products.ToList();
+            return products;
+        }
+        public ActionResult ListByCategory()
+        {
+            ListProductByCategoryViewModel listbyCate = new ListProductByCategoryViewModel();
+            listbyCate.Categories = buildCategories();
+
+            return View(listbyCate);
+        }
+        // Post ListProductByCategory
+        [HttpPost]
+        public ActionResult listByCategory(ListProductByCategoryViewModel listByCate)
+        {
+            if (ModelState.IsValid)
+            {
+                if (listByCate.SelectedCategory != null)
+                {
+                    //Binding dropdown again
+                    listByCate.Categories = buildCategories(listByCate.SelectedCategory);
+
+                    var products = mockProductCollection();
+                    var results = products.FindAll(x => x.CategoryId.ToString() ==
+                                       listByCate.SelectedCategory.ToLower());
+                    listByCate.SearchResults = results;
+                }
+            }
+            return View(listByCate);
         }
     }
 }
