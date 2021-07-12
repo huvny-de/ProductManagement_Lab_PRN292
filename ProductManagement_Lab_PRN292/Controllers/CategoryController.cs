@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductManagement_Lab_PRN292.DbContexts;
@@ -10,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
+    [Authorize(Roles = "Administrator,Manager,Editor")]
+
     public class CategoryController : Controller
     {
         private readonly DbProductManagement _context;
