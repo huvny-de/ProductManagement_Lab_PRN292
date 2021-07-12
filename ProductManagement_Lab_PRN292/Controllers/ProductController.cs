@@ -43,23 +43,11 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // GET: ProductsController
         public async Task<IActionResult> Index()
         {
-            //var products = from p in _context.Products select p;
-            //if (!String.IsNullOrEmpty(searchString))
-            //{
-            //    products = products.Where(x => x.ProductName.Contains(searchString)).Include(p => p.Category);
-            //    return View(await products.ToListAsync());
-            //}
-            //else
             IQueryable<string> cateName = from c in _context.Categories
                                           orderby c.CategoryId
                                           select c.CategoryName;
-            var productByCategory = new ListProductByCategoryViewModel
-            {
-                Categories = new SelectList(await cateName.Distinct().ToListAsync()),
-                Products = await _context.Products.Include(p => p.Category).ToListAsync()
-            };
-            return View(productByCategory);
-
+            var categories = new SelectList(await cateName.Distinct().ToListAsync());
+            return View(getModel(categories, await _context.Products.Include(p => p.Category).ToListAsync()));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
