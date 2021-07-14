@@ -1,0 +1,36 @@
+﻿@model ProductManagement_Lab_PRN292.Models.UserWithRoleSelectViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Update User Role</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" disabled />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Role <select name="roleName" asp-items="Model.Roles" class="form-select" aria-label="Default select example">
+                    <option value="role" selected>Choose Role ...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back to User Role", "Index", "User", new { id = Model.Id })
+
+</div>
+

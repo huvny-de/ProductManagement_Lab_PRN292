@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ProductManagement_Lab_PRN292.Models;
 
 namespace ProductManagement_Lab_PRN292.DbContexts
 {
@@ -24,5 +25,6 @@ namespace ProductManagement_Lab_PRN292.DbContexts
                 new Product { ProductId = 2, ProductName = "ProductName2", Amount = 200, Price = 300, Photo = "san-pham-2.jpg", CategoryId = 2 }
                 );
         }
+        public DbSet<ProductManagement_Lab_PRN292.Models.UserWithRoleViewModel> UserWithRoleViewModel { get; set; }
     }
 }

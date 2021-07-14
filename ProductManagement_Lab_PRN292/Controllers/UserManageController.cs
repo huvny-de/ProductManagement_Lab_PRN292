@@ -66,7 +66,6 @@ namespace ProductManagement_Lab_PRN292.Controllers
             return View(listUser);
         }
 
-
         //public ActionResult UsersWithRoles()
         //{
         //    //var test = _userManager.Users.Select(x => new UserWithRoleViewModel

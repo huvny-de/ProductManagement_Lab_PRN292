@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using ProductManagement_Lab_PRN292.DbContexts;
+using ProductManagement_Lab_PRN292.Entities;
 using ProductManagement_Lab_PRN292.Models;
 using System;
 using System.Collections.Generic;
@@ -13,9 +15,14 @@ namespace ProductManagement_Lab_PRN292.Controllers
     [Authorize(Roles = "Administrator")]
     public class RoleController : Controller
     {
+        private readonly DbProductManagement _context;
         private readonly RoleManager<IdentityRole> _roleManager;
-        public RoleController(RoleManager<IdentityRole> roleManager)
+        private readonly UserManager<AppUser> _userManager;
+        public RoleController(RoleManager<IdentityRole> roleManager, DbProductManagement context,
+            UserManager<AppUser> userManager)
         {
+            _context = context;
+            _userManager = userManager;
             _roleManager = roleManager;
         }
         //SetAlert
@@ -96,11 +103,17 @@ namespace ProductManagement_Lab_PRN292.Controllers
         }
 
         // GET: RoleController/Edit/5
-        public ActionResult Edit(string id)
+        public async Task<ActionResult> Edit(string id)
         {
+
             if (id == null)
             {
                 SetAlert("Not Found Role", 2);
+                return RedirectToAction(nameof(Index));
+            }
+            if (await IsAdmin(id))
+            {
+                SetAlert("Cannot Edit This Role", 3);
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -120,15 +133,17 @@ namespace ProductManagement_Lab_PRN292.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> EditAsync(string id, IFormCollection collection)
         {
-            string name = collection["RoleName"];
-            bool isExist = await _roleManager.RoleExistsAsync(name);
 
-            if (id == null)
+            string name = collection["RoleName"];
+            var check = await _roleManager.FindByIdAsync(id);
+            //bool isExist = await _roleManager.RoleExistsAsync(name);
+
+            if (id == null || check == null)
             {
                 SetAlert("Not Found Role", 2);
                 return RedirectToAction(nameof(Index));
             }
-            else if (isExist)
+            if (await IsExistRoleName(name))
             {
                 SetAlert(String.Format("Role Name Was Existed: {0}", name), 2);
                 return RedirectToAction(nameof(Edit));
@@ -154,11 +169,16 @@ namespace ProductManagement_Lab_PRN292.Controllers
 
 
         // GET: RoleController/Delete/5
-        public ActionResult Delete(string id)
+        public async Task<ActionResult> Delete(string id)
         {
             if (id == null)
             {
                 SetAlert("Not Found Role", 2);
+                return RedirectToAction(nameof(Index));
+            }
+            if (await IsAdmin(id))
+            {
+                SetAlert("Cannot Delete This Role", 3);
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -206,6 +226,18 @@ namespace ProductManagement_Lab_PRN292.Controllers
             {
                 return View();
             }
+        }
+        // GET : User With Role
+     
+        // Extend Prod
+        public async Task<bool> IsAdmin(string id)
+        {
+            var isAdmin = (await _roleManager.FindByIdAsync(id)).Name;
+            return isAdmin.Equals("Administrator");
+        }
+        public async Task<bool> IsExistRoleName(string name)
+        {
+            return await _roleManager.RoleExistsAsync(name);
         }
     }
 }

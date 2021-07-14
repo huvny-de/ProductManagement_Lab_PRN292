@@ -50,7 +50,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
                                           orderby c.CategoryId
                                           select c.CategoryName;
             var categories = new SelectList(await cateName.Distinct().ToListAsync());
-            return View(getModel(categories, await _context.Products.Include(p => p.Category).ToListAsync()));
+            return View(GetModel(categories, await _context.Products.Include(p => p.Category).ToListAsync()));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -70,7 +70,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
             {
                 products = products.Where(s => s.ProductName.Contains(searchString));
                 var categories = new SelectList(cateName.Distinct().ToList());
-                return View(getModel(categories, await products.Include(p => p.Category).ToListAsync()));
+                return View(GetModel(categories, await products.Include(p => p.Category).ToListAsync()));
             }
             if (string.IsNullOrEmpty(searchString) && productCategory.Equals("all"))
             {
@@ -82,7 +82,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
             {
                 products = products.Where(x => x.Category.CategoryName == productCategory);
                 var categories = new SelectList(cateName.Distinct().ToList());
-                return View(getModel(categories, await products.Include(p => p.Category).ToListAsync()));
+                return View(GetModel(categories, await products.Include(p => p.Category).ToListAsync()));
 
             }
             // search product in category
@@ -91,10 +91,10 @@ namespace ProductManagement_Lab_PRN292.Controllers
                 products = products.Where(x => x.Category.CategoryName == productCategory)
                     .Where(s => s.ProductName.Contains(searchString));
                 var categories = new SelectList(await cateName.Distinct().ToListAsync());
-                return View(getModel(categories, await products.Include(p => p.Category).ToListAsync()));
+                return View(GetModel(categories, await products.Include(p => p.Category).ToListAsync()));
             }
         }
-        public ListProductByCategoryViewModel getModel(SelectList categories, List<Product> products)
+        public ListProductByCategoryViewModel GetModel(SelectList categories, List<Product> products)
         {
             var productByCategory = new ListProductByCategoryViewModel
             {
