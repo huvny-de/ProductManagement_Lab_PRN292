@@ -174,7 +174,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // POST: ProductsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int? id, [Bind("ProductId,ProductName,Price,Amount,Photo,CategoryId")] Product product, IFormFile hinhanh)
+        public async Task<IActionResult> Edit(int? id, [Bind("ProductId,ProductName,Price,Amount,Photo,CategoryId")] Product product, IFormFile hinhanh, string hinhanhcu)
         {
             if (id != product.ProductId)
             {
@@ -185,7 +185,11 @@ namespace ProductManagement_Lab_PRN292.Controllers
             {
                 try
                 {
-                    if (hinhanh != null || hinhanh.Length != 0)
+                    if(hinhanh == null || hinhanh.Length == 0)
+                    {
+                        product.Photo = hinhanhcu;
+                    }
+                    else
                     {
                         var path = Path.Combine(webHostEnvironment.WebRootPath, "images", hinhanh.FileName);
                         var stream = new FileStream(path, FileMode.Create);
