@@ -262,6 +262,9 @@ namespace ProductManagement_Lab_PRN292.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Photo")
                         .HasColumnType("nvarchar(max)");
 

@@ -18,6 +18,8 @@ namespace ProductManagement_Lab_PRN292.Entities
         [Required]
         [DisplayName("Product Name")]
         public string ProductName { get; set; }
+        [DisplayName("Description")]
+        public string Description { get; set; }
 
         [Required]
         [DisplayName("Price")]

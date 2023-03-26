@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ProductManagement_Lab_PRN292.props" />
+</Project>

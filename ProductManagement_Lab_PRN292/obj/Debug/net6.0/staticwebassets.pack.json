@@ -1,0 +1,577 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\Blog-Template.css",
+      "PackagePath": "staticwebassets\\css\\Blog-Template.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\LineIcons.2.0.css",
+      "PackagePath": "staticwebassets\\css\\LineIcons.2.0.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\bootstrap-5.0.5-alpha.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-5.0.5-alpha.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\nicepage.css",
+      "PackagePath": "staticwebassets\\css\\nicepage.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\nouislider.css",
+      "PackagePath": "staticwebassets\\css\\nouislider.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\selectr.css",
+      "PackagePath": "staticwebassets\\css\\selectr.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\css\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\css\\tiny-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\fonts\\LineIcons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\0fd3416c.jpeg",
+      "PackagePath": "staticwebassets\\images\\0fd3416c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\107825730_3495623013816379_6358959778401601201_o.jpg",
+      "PackagePath": "staticwebassets\\images\\107825730_3495623013816379_6358959778401601201_o.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\110301357_3495622577149756_2075127099538842669_o.jpg",
+      "PackagePath": "staticwebassets\\images\\110301357_3495622577149756_2075127099538842669_o.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\113595067_3495621930483154_1319982339117775616_o.jpg",
+      "PackagePath": "staticwebassets\\images\\113595067_3495621930483154_1319982339117775616_o.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\122450878_1304886559854290_7984940703629350457_n.jpg",
+      "PackagePath": "staticwebassets\\images\\122450878_1304886559854290_7984940703629350457_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\198136773_169800885017462_4872851339480255550_n.jpg",
+      "PackagePath": "staticwebassets\\images\\198136773_169800885017462_4872851339480255550_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\32.jpg",
+      "PackagePath": "staticwebassets\\images\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\68f64b9d.jpeg",
+      "PackagePath": "staticwebassets\\images\\68f64b9d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\777.jpg",
+      "PackagePath": "staticwebassets\\images\\777.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\8ad73f3c.jpeg",
+      "PackagePath": "staticwebassets\\images\\8ad73f3c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\Untitled.jpg",
+      "PackagePath": "staticwebassets\\images\\Untitled.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\about\\about-img.png",
+      "PackagePath": "staticwebassets\\images\\about\\about-img.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\about\\dot-shape.svg",
+      "PackagePath": "staticwebassets\\images\\about\\dot-shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\about\\why-us.png",
+      "PackagePath": "staticwebassets\\images\\about\\why-us.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\banner\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\banner\\graygrids-logo.svg",
+      "PackagePath": "staticwebassets\\images\\banner\\graygrids-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\banner\\lineicons-logo.svg",
+      "PackagePath": "staticwebassets\\images\\banner\\lineicons-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\banner\\pagebulb-logo.svg",
+      "PackagePath": "staticwebassets\\images\\banner\\pagebulb-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\banner\\uideck-logo.svg",
+      "PackagePath": "staticwebassets\\images\\banner\\uideck-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\client-logo\\graygrids-logo.svg",
+      "PackagePath": "staticwebassets\\images\\client-logo\\graygrids-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\client-logo\\lineicons-logo.svg",
+      "PackagePath": "staticwebassets\\images\\client-logo\\lineicons-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\client-logo\\pagebulb-logo.svg",
+      "PackagePath": "staticwebassets\\images\\client-logo\\pagebulb-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\client-logo\\uideck-logo.svg",
+      "PackagePath": "staticwebassets\\images\\client-logo\\uideck-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\dashboard\\profile-img.png",
+      "PackagePath": "staticwebassets\\images\\dashboard\\profile-img.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\default-logo.png",
+      "PackagePath": "staticwebassets\\images\\default-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\dfdf.jpg",
+      "PackagePath": "staticwebassets\\images\\dfdf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\footer\\map-img.svg",
+      "PackagePath": "staticwebassets\\images\\footer\\map-img.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\hero\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\hero\\hero-bgX.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\hero-bgX.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\logo\\logo-2.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\ad-img.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\ad-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\common-bg.svg",
+      "PackagePath": "staticwebassets\\images\\product\\common-bg.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\l-product-1.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\l-product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\l-product-2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\l-product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\l-product-3.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\l-product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\l-product-4.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\l-product-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\l-product-5.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\l-product-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\l-product-6.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\l-product-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\product-details-1.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\product-details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\product-details-2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\product-details-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\product-details-3.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\product-details-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\product-thumb-1.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\product-thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\product-thumb-2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\product-thumb-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\product\\product-thumb-3.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\product-thumb-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\san-pham-1.jpg",
+      "PackagePath": "staticwebassets\\images\\san-pham-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\san-pham-2.jpg",
+      "PackagePath": "staticwebassets\\images\\san-pham-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\shoe1.jpg",
+      "PackagePath": "staticwebassets\\images\\shoe1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\shoe2.jpg",
+      "PackagePath": "staticwebassets\\images\\shoe2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\shoe3.jpg",
+      "PackagePath": "staticwebassets\\images\\shoe3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\subscribe\\subscribe-bg.svg",
+      "PackagePath": "staticwebassets\\images\\subscribe\\subscribe-bg.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\testimonial\\quote.svg",
+      "PackagePath": "staticwebassets\\images\\testimonial\\quote.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\testimonial\\testimonial-1.png",
+      "PackagePath": "staticwebassets\\images\\testimonial\\testimonial-1.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\testimonial\\testimonial-2.png",
+      "PackagePath": "staticwebassets\\images\\testimonial\\testimonial-2.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\testimonial\\testimonial-3.png",
+      "PackagePath": "staticwebassets\\images\\testimonial\\testimonial-3.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\tytyty.jpg",
+      "PackagePath": "staticwebassets\\images\\tytyty.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\images\\video\\video-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\video\\video-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\bootstrap.bundle-5.0.0.alpha-min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle-5.0.0.alpha-min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\nouislider.js",
+      "PackagePath": "staticwebassets\\js\\nouislider.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\selectr.min.js",
+      "PackagePath": "staticwebassets\\js\\selectr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\js\\tiny-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProductManagement_Lab_PRN292.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ProductManagement_Lab_PRN292.props",
+      "PackagePath": "build\\ProductManagement_Lab_PRN292.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductManagement_Lab_PRN292.props",
+      "PackagePath": "buildMultiTargeting\\ProductManagement_Lab_PRN292.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProductManagement_Lab_PRN292.props",
+      "PackagePath": "buildTransitive\\ProductManagement_Lab_PRN292.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

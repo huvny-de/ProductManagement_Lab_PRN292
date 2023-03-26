@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
-    [Authorize(Roles = "Administrator,Manager,Editor")]
+    [Authorize(Roles = "Administrator,Manager,Editor,Host")]
 
     public class ProductController : Controller
     {
@@ -134,7 +134,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // POST: ProductsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductName,Price,Amount,Photo,CategoryId")] Product product, IFormFile hinhanh)
+        public async Task<IActionResult> Create([Bind("ProductName,Description,Price,Amount,Photo,CategoryId")] Product product, IFormFile hinhanh)
         {
             if (hinhanh == null || hinhanh.Length == 0)
             {
@@ -174,7 +174,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
         // POST: ProductsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int? id, [Bind("ProductId,ProductName,Price,Amount,Photo,CategoryId")] Product product, IFormFile hinhanh, string hinhanhcu)
+        public async Task<IActionResult> Edit(int? id, [Bind("ProductId,ProductName,Description,Price,Amount,Photo,CategoryId")] Product product, IFormFile hinhanh, string hinhanhcu)
         {
             if (id != product.ProductId)
             {
@@ -185,7 +185,7 @@ namespace ProductManagement_Lab_PRN292.Controllers
             {
                 try
                 {
-                    if(hinhanh == null || hinhanh.Length == 0)
+                    if (hinhanh == null || hinhanh.Length == 0)
                     {
                         product.Photo = hinhanhcu;
                     }

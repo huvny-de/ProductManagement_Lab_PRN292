@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ProductManagement_Lab_PRN292.Controllers
 {
-    [Authorize(Roles = "Administrator,Manager,Editor")]
+    [Authorize(Roles = "Administrator,Manager,Editor,Host")]
 
     public class CategoryController : Controller
     {

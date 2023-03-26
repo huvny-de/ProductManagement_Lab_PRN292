@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using ProductManagement_Lab_PRN292.Entities;
+using System.Security.Claims;
 
 namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account
 {
@@ -85,7 +86,7 @@ namespace ProductManagement_Lab_PRN292.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in - " + DateTime.Now);
-                    return LocalRedirect(returnUrl);
+                    return LocalRedirect("~/Home");
                 }
                 if (result.RequiresTwoFactor)
                 {

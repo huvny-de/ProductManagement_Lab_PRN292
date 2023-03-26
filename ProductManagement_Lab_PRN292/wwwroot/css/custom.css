@@ -1,0 +1,17 @@
+﻿.myBg{
+    background-color: aqua;
+}
+
+.testColor {
+    background-color: #ff9696;
+}
+
+.hoverDiv:hover {
+    background-color: #ff9696;
+}
+
+.money {
+    font-size: x-large;
+    font-weight: bold;
+    color: red;
+}

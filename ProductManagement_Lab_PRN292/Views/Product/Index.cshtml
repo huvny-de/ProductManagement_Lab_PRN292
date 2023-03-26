@@ -22,19 +22,22 @@
         </p>
     </form>
     @*<div class="float-right" row col-md-4>
-            <form asp-controller="Product" asp-action="Index" method="get">
-                <p>
-                    <input type="text" name="SearchString" placeholder="Product Name" />
-                    <input type="submit" value="Filter" />
-                </p>
-            </form>
-        </div>*@
+    <form asp-controller="Product" asp-action="Index" method="get">
+    <p>
+    <input type="text" name="SearchString" placeholder="Product Name" />
+    <input type="submit" value="Filter" />
+    </p>
+    </form>
+    </div>*@
 </div>
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Products[0].ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].Description)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Products[0].Price)
@@ -60,6 +63,9 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)&#8363

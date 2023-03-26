@@ -11,6 +11,8 @@ namespace ProductManagement_Lab_PRN292.Models
     {
         public List<Product> Products { get; set; }
         public SelectList Categories { get; set; }
+        public List<String> CategoriesName { get; set; }
+
         public int ProductCategory { get; set; }
         public string SearchString { get; set; }
     }

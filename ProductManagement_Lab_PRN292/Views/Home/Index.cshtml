@@ -1,8 +1,344 @@
-﻿@{
+﻿@model ProductManagement_Lab_PRN292.Models.ListProductByCategoryViewModel
+@{
     ViewData["Title"] = "Home Page";
+   // Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome To Product Management</h1>
-    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
-</div>
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="~/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="~/css/animate.css">
+
+    <link rel="stylesheet" href="~/css/tiny-slider.css">
+
+    <link rel="stylesheet" href="~/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="~/css/LineIcons.2.0.css">
+
+    <link rel="stylesheet" href="~/css/selectr.css">
+
+    <link rel="stylesheet" href="~/css/nouislider.css">
+
+    <link rel="stylesheet" href="~/css/bootstrap-5.0.5-alpha.min.css">
+
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="home" class="hero-area bg_cover">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto col-lg-7 col-xl-6 col-md-10">
+                    <div class="text-center hero-content">
+                        <h1 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Welcome to Shoes Store</h1>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">Description Description Description Description Description Description Description Description </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="search-area">
+        <div class="container">
+            <div class="search-wrapper">
+                <form action="#">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-sm-5 col-10">
+                            <div class="search-input">
+                                <label for="keyword"><i class="lni lni-search-alt theme-color"></i></label>
+                                <input type="text" name="keyword" id="keyword" placeholder="Shoe Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-5 col-10">
+                            <div class="search-input">
+                                <label for="category"><i class="lni lni-grid-alt theme-color"></i></label>
+                                <select name="category" id="category">
+                                    <option value="none" selected disabled>Categories</option>
+                                    @foreach (var item in Model.CategoriesName)
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-5 col-10">
+                            <div class="search-btn">
+                                <button class="main-btn btn-hover">Search <i class="lni lni-search-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="latest-product-area pt-130 pb-110">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto col-xl-6 col-lg-7 col-md-10">
+                    <div class="text-center section-title mb-60">
+                        <h1>Current Shoes</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt dolore magna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model.Products)
+                {
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img src="~/images/@item.Photo" height="250px" width="250px" alt="">
+                                </a>
+                                <div class="product-action">
+                                    <a href="javascript:void(0)"><i class="lni lni-heart"></i></a>
+                                    <a href="javascript:void(0)" class="share"><i class="lni lni-share"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="name"><a href="product-details.html">@item.ProductName</a></h3>
+                                <span class="update">@item.Description</span>
+                                <ul class="address">
+                                    @*    <li>
+                                <a href="javascript:void(0)"><i class="lni lni-eye"></i> @item.Price</a>
+                                </li>*@
+                                    @*    <li>
+                                <a href="javascript:void(0)"><i class="lni lni-thumbs-up"></i> @item.FollowCount</a>
+                                </li>
+                                <li>
+                                <a href="javascript:void(0)"><i class="lni lni-user"></i> @item.AuthorName</a>
+                                </li>*@
+                                    @*<li>*@
+                                    @*</li>*@
+
+                                    <a href="javascript:void(0)"><i class="lni lni-package"></i> @item.Category.CategoryName</a>
+
+                                    <br>
+
+                                </ul>
+
+                                @*     @for (int i = 0; i < item.RateCount; i++)
+                            {
+                            <span class="fa fa-star checked"></span>
+                            }
+                            *@
+                                <div class="product-bottom">
+                                    <h3 class="price">$ @item.Price</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    @*    <footer class="footer-area">
+    <div class="widget-wrapper">
+    <div class="map-img">
+    <img src="~/images/footer/map-img.svg" alt="">
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-xl-4 col-md-7">
+    <div class="footer-widget about">
+    <a href="index.html" class="d-inline-block mb-30">
+    <img src="~/images/logo/logo.svg" alt="">
+    </a>
+    <p class="text-white mb-25">Buy And Sell Everything From Used Cars To Mobile Phones And Computers, Search For Property, Jobs And More</p>
+    <ul class="social">
+    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-xl-2 col-md-4 order-md-2 order-xl-1 col-sm-6">
+    <div class="footer-widget">
+    <h4>Quick Link</h4>
+    <ul class="link">
+    <li><a href="javascript:void(0)">Home</a></li>
+    <li><a href="javascript:void(0)">About</a></li>
+    <li><a href="javascript:void(0)">Category</a></li>
+    <li><a href="javascript:void(0)">Product details</a></li>
+    <li><a href="javascript:void(0)">Contact</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-xl-2 col-md-4 order-md-3 order-xl-2 col-sm-6">
+    <div class="footer-widget">
+    <h4>Support</h4>
+    <ul class="link">
+    <li><a href="javascript:void(0)">Live Chat</a></li>
+    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+    <li><a href="javascript:void(0)">Purchase</a></li>
+    <li><a href="javascript:void(0)">Protection</a></li>
+    <li><a href="javascript:void(0)">Support</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-xl-2 col-md-4 order-md-4 order-xl-3 col-sm-6">
+    <div class="footer-widget">
+    <h4>Information</h4>
+    <ul class="link">
+    <li><a href="javascript:void(0)">Company</a></li>
+    <li><a href="javascript:void(0)">Contact Info</a></li>
+    <li><a href="javascript:void(0)">Blog & Articles</a></li>
+    <li><a href="javascript:void(0)">Terms of Service</a></li>
+    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-xl-2 col-md-5 order-md-1 order-xl-4 col-sm-6">
+    <div class="footer-widget">
+    <h4>Contact Us</h4>
+    <ul>
+    <li>
+    <span>Phone:</span>
+    0345983672937
+    </li>
+    <li>
+    <span>Email:</span>
+    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5dccad0d7c8c4ccc9e5c2c8c4ccc98bc6cac8">[email&#160;protected]</a>
+    </li>
+    <li>
+    <span>Location:</span>
+    United State of America
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="copy-right">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+    <div class="text-center">
+    <p>Designed & Developed By <a href="https://graygrids.com/" rel="nofollow" target="_blank">GrayGrids</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>*@
+
+
+    <a href="#" class="back-to-top btn-hover"><i class="lni lni-chevron-up"></i></a>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
+
+    <script src="~/js/tiny-slider.js"></script>
+
+    <script src="~/js/wow.min.js"></script>
+
+    <script src="~/js/glightbox.min.js"></script>
+
+    <script src="~/js/selectr.min.js"></script>
+
+    <script src="~/js/nouislider.js"></script>
+
+    <script src="~/js/main.js"></script>
+    <script>
+
+        //========= glightbox
+        const myGallery = GLightbox({
+            'href': '~/video/Free App Landing Page Template - AppLand.mp4',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //======== tiny slider for feature-product-carousel
+        tns({
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 20,
+            nav: false,
+            controls: true,
+            controlsPosition: 'bottom',
+            controlsText: [
+                '<span class="prev"><i class="lni lni-chevron-left"></i></span>',
+                '<span class="next"><i class="lni lni-chevron-right"></i></span>'
+            ],
+            container: ".feature-product-carousel",
+            items: 1,
+            center: false,
+            autoplayTimeout: 5000,
+            swipeAngle: false,
+            speed: 400,
+            responsive: {
+                768: {
+                    items: 2,
+                },
+
+                992: {
+                    items: 2,
+                },
+
+                1200: {
+                    items: 3,
+                }
+            }
+        });
+
+        //======== tiny slider for testimonial
+        tns({
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 20,
+            nav: true,
+            controls: false,
+            container: ".testimonial-carousel",
+            items: 1,
+            center: false,
+            autoplayTimeout: 5000,
+            swipeAngle: false,
+            speed: 400,
+            responsive: {
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
