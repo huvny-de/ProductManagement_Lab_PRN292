@@ -557,20 +557,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProductManagement_Lab_PRN292.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Prn211.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ProductManagement_Lab_PRN292.props",
-      "PackagePath": "build\\ProductManagement_Lab_PRN292.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Prn211.props",
+      "PackagePath": "build\\Prn211.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductManagement_Lab_PRN292.props",
-      "PackagePath": "buildMultiTargeting\\ProductManagement_Lab_PRN292.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Prn211.props",
+      "PackagePath": "buildMultiTargeting\\Prn211.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProductManagement_Lab_PRN292.props",
-      "PackagePath": "buildTransitive\\ProductManagement_Lab_PRN292.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Prn211.props",
+      "PackagePath": "buildTransitive\\Prn211.props"
     }
   ],
   "ElementsToRemove": []

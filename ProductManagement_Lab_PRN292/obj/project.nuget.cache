@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qzG9FB6WisvI5lLsHNXJbxoVMJWPVG+ey4z6Xz9sW9HtypB0z3T54SfNnf1ucugiKeYaVwWnaGumMjli0GpIxA==",
+  "dgSpecHash": "f4D53atCnI7MfyJ429klnaMTSD4WcRgPcsyx0Nv2Lvf1RUtclwTOqhSQKa1fEabY9AfN+LfL5Zpdx1cbdUOESA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
+  "projectFilePath": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\Prn211.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SE140364\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SE140364\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

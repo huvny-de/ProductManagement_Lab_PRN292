@@ -10666,9 +10666,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
-      "projectName": "ProductManagement_Lab_PRN292",
-      "projectPath": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292.csproj",
+      "projectUniqueName": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\Prn211.csproj",
+      "projectName": "Prn211",
+      "projectPath": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\Prn211.csproj",
       "packagesPath": "C:\\Users\\SE140364\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\FPT\\OutSource\\ProductManagement_Lab_PRN292\\ProductManagement_Lab_PRN292\\obj\\",
       "projectStyle": "PackageReference",
